@@ -12,8 +12,8 @@ import java.util.stream.Collectors;
 
 public class BooleanSearchEngine implements SearchEngine {
 
-    private HashMap<String, List<PageEntry>> wordListPageEntry;
-    private HashSet<String> stopSet;
+    private HashMap<String, List<PageEntry>> wordListPageEntry;//Типом переменной/поля/параметра/любой другой ячейки лучше указывать интерфейс, а не реализацию, ведь вы требуете от объекта уметь выполнять что-то (интерфейс), но вам не совсем важно как это реализовано (класс); т.е., например, для списка это будет выглядеть так: List<Integer> list = new ArrayList<>();
+    private HashSet<String> stopSet;                          //
 
 
     public BooleanSearchEngine(File pdfsDir) throws IOException {
